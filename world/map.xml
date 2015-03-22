@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map proto="1.3.0">
+	<name>Deux Prison</name>
+	<version>1.0.0</version>
+	<objective>敵チームを殲滅/annihilate the enemy team</objective>
+	<authors><author>Rai_gA</author>
+	</authors>
+	<teams>
+		<team color="blue" max="5">Blue Team</team>
+		<team color="red" max="5">Red Team</team>
+	</teams>
+	<classes sticky="false">
+		<class name="Knight" description="I am Swordman" icon="iron sword">
+			<kit>
+				<chestplate>iron chestplate</chestplate>
+				<leggings bind="true">chainmail leggings</leggings>
+				<boots bind="true">chainmail boots</boots>
+				<item slot="0" bind="true">iron sword</item>
+				<item slot="1" bind="true">bow</item>
+				<item slot="2" bind="true">fishing rod</item>
+				<item slot="6" damage="16421" bind="true">potion</item>
+				<item slot="7" amount="5" bind="true">arrow</item>
+				<item slot="8" amount="16" bind="true">cooked beef</item>
+			</kit>
+		</class>
+		<class name="Archer" description="I am shooter" icon="bow">
+			<kit>
+				<chestplate bind="true">gold chestplate</chestplate>
+				<boots bind="true">chainmail boots</boots>
+				<item slot="0" bind="true">wood sword</item>
+				<item slot="1" enchantment="arrow_knockback:1" bind="true">bow</item>
+				<item slot="5" damage="16421" bind="true">potion</item>
+				<item slot="6" amount="32" bind="true">arrow</item>
+				<item slot="7" bind="true">golden apple</item>
+				<item slot="8" amount="32" bind="true">cookie</item>
+			</kit>
+		</class>
+		<class name="Berserker" description="I am berserker" icon="diamond axe">
+			<kit>
+				<chestplate bind="true">iron chestplate</chestplate>
+				<boots bind="true">diamond boots</boots>
+				<item slot="0" enchantment="damage_all:1" bind="true">diamond axe</item>
+				<item slot="8" amount="32" damage="1" bind="true">cooked fish</item>
+				<potion duration="oo" amplifier="0">REGENERATION</potion>
+				<potion duration="oo" amplifier="0">slow</potion>
+			</kit>
+		</class>
+		<class name="Pyro" description="I can use fire" icon="blaze powder">
+			<kit>
+				<chestplate bind="true">chainmail chestplate</chestplate>
+				<leggings bind="true">chainmail boots</leggings>
+				<boots bind="true">chainmail boots</boots>
+				<item slot="0" enchantment="fire_aspect:1" bind="true">iron axe</item>
+				<item slot="1" enchantment="arrow_fire:1" bind="true">bow</item>
+				<item slot="7" amount="3" bind="true">arrow</item>
+				<item slot="8" amount="32" bind="true">cooked beef</item>
+				<potion duration="oo" amplifier="1">fire resistance</potion>
+			</kit>
+		</class>
+		<class name="Kan-nushi" description="I have potions" icon="gold sword">
+			<kit>
+				<leggings bind="true">iron leggings</leggings>
+				<boots bind="true">iron boots</boots>
+				<item slot="0" enchantment="damage_all:2;knockback:1;fire_aspect:1" bind="true">Gold sword</item>
+				<item slot="1" damage="16460" bind="true">potion</item>
+				<item slot="2" damage="16460" bind="true">potion</item>
+				<item slot="3" damage="16460" bind="true">potion</item>
+				<item slot="4" damage="16460" bind="true">potion</item>
+				<item slot="5" damage="16460" bind="true">potion</item>
+				<item slot="6" damage="16460" bind="true">potion</item>
+				<item slot="8" amount="32" bind="true">cooked fish</item>
+			</kit>
+		</class>
+		<class name="Tank" description="I am Tank" icon="diamond chestplate">
+			<kit>
+				<chestplate bind="true">diamond chestplate</chestplate>
+				<leggings bind="true">diamond leggings</leggings>
+				<boots bind="true">diamond boots</boots>
+				<item slot="0" bind="true">diamond pickaxe</item>
+				<item slot="8" amount="32" bind="true">cookie</item>
+				<potion duration="oo" amplifier="3">SLOW</potion>
+				<potion duration="oo" amplifier="1">HUNGER</potion>
+			</kit>
+		</class>
+		<class name="Cat" description="Meow" icon="monster egg">
+			<kit>
+				<boots enchantment="PROTECTION_FALL:4" bind="true">gold boots</boots>
+				<item slot="0" bind="true">stone sword</item>
+				<item slot="8" amount="64" bind="true">raw fish</item>
+				<potion duration="oo" amplifier="2">REGENERATION</potion>
+				<potion duration="oo" amplifier="1">NIGHT_VISION</potion>
+				<potion duration="oo" amplifier="1">SPEED</potion>
+			</kit>
+		</class>
+	</classes>
+	<itemremove>
+		<item>wood sword</item>
+		<item>gold sword</item>
+		<item>stone sword</item>
+		<item>iron sword</item>
+		<item>iron axe</item>
+		<item>diamond axe</item>
+		<item>bow</item>
+		<item>fishing rod</item>
+		<item>arrow</item>
+		<item>potion</item>
+		<item>leather helmet</item>
+		<item>chainmail chestplate</item>
+		<item>chainmail leggings</item>
+		<item>chainmail boots</item>
+		<item>gold chestplate</item>
+		<item>gold leggings</item>
+		<item>gold boots</item>
+		<item>iron chestplate</item>
+		<item>iron leggings</item>
+		<item>iron boots</item>
+		<item>diamond chestplate</item>
+		<item>diamond leggings</item>
+		<item>diamond boots</item>
+		<item>cooked beef</item>
+		<item>cooked fish</item>
+		<item>cookie</item>
+		<item>golden apple</item>
+		<item>golden carrot</item>
+		<item>diamond pickaxe</item>
+	</itemremove>
+	<killreward>
+		<item damage="16421" bind="true">potion</item>
+	</killreward>
+	<spawns>
+		<spawn team="blue" yaw="-0">
+			<cuboid min="-0,3,-31" max="-0,3,-33"/>
+		</spawn>
+		<spawn team="red" yaw="-178">
+			<cuboid min="-0,3,31" max="0,3,33"/>
+		</spawn>
+		<default yaw="-90">
+			<cuboid min="0,47,-0" max="-0,47,0"/>
+		</default>
+	</spawns>
+	<regions>
+		<apply block="deny-break" message="破壊できません/You can not break.">
+			<rectangle min="-oo,-oo" max="oo,oo"/>
+		</apply>
+	</regions>
+	<blitz>
+		<time>18000</time>
+		<lives>0</lives>
+		<broadcastLives>true</broadcastLives>
+		<title>Blitz</title>
+	</blitz>
+</map>
